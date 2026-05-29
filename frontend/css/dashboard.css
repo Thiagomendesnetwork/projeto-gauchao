@@ -464,24 +464,37 @@ header p {
 
     display: flex;
 
+    flex-direction: row;
+
+    flex-wrap: nowrap;
+
     overflow-x: auto;
 
     gap: 10px;
 
+    width: 100%;
+
     padding-bottom: 10px;
-  }
+}
 
   .sidebar nav a {
 
-    min-width: 160px;
+    min-width: 140px;
+
+    display: flex;
+
+    align-items: center;
 
     justify-content: center;
+
+    gap: 8px;
+
+    white-space: nowrap;
 
     font-size: 14px;
 
     padding: 14px;
-  }
-
+}
   .content {
 
     padding: 15px;
@@ -529,10 +542,10 @@ header p {
 
   .mesas-grid {
 
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
 
-    gap: 18px;
-  }
+    gap: 14px;
+}
 
   .mesa-card {
 
@@ -543,24 +556,41 @@ header p {
 
   .mesa-img {
 
-    width: 220px;
-  }
+    width: 140px;
+}
 
   .mesa-numero {
 
-    width: 70px;
-    height: 70px;
+    width: 55px;
+    height: 55px;
 
-    font-size: 32px;
+    font-size: 24px;
 
-    top: -45px;
-  }
+    top: -35px;
+}
 
   .mesa-status {
 
     margin-top: -25px;
   }
 
+}
+
+.stat-card h3 {
+
+  font-size: 14px;
+}
+
+.stat-card span {
+
+  font-size: 20px;
+}
+
+.header-buttons button {
+
+  padding: 12px;
+
+  font-size: 13px;
 }
 
 .mesa-card button {
