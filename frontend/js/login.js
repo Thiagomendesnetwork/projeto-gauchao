@@ -8,6 +8,13 @@ const usuariosPadrao = [
   },
 
   {
+    nome: 'Administrador',
+    email: 'Admin',
+    senha: '123',
+    cargo: 'Administrador'
+  },
+
+  {
     nome: 'Caixa',
     email: 'caixa',
     senha: '123',
