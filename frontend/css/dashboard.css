@@ -430,6 +430,11 @@ header p {
     );
 }
 
+.mobile-logout {
+
+  display: none;
+}
+
 @media (max-width: 900px) {
 
   .layout {
@@ -462,7 +467,7 @@ header p {
 
   .mobile-top img {
 
-    width: 140px;
+    width: 240px;
   }
 
   .mobile-logout {
@@ -654,5 +659,19 @@ header p {
 
     cursor: pointer;
   }
+
+  .mobile-logout {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+.logout-btn {
+
+  display: none;
+}
 
 }
