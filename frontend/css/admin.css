@@ -1,0 +1,114 @@
+.top-header {
+  padding: 20px;
+  background: #141414;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.back-btn {
+  background: var(--gold);
+  color: black;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.admin-container {
+  padding: 20px;
+}
+
+.admin-top {
+  margin-bottom: 30px;
+}
+
+.novo-btn {
+  background: var(--gold);
+  color: black;
+  padding: 14px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.usuario-card {
+  background: #1b1b1b;
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.acoes {
+  display: flex;
+  gap: 10px;
+}
+
+.editar {
+  background: #2563eb;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 8px;
+}
+
+.excluir {
+  background: #dc2626;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 8px;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  width: 100%;
+  max-width: 400px;
+
+  background: #1b1b1b;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.modal-content h2 {
+  margin-bottom: 20px;
+  color: var(--gold);
+}
+
+.modal-content input,
+.modal-content select {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  background: #2a2a2a;
+  color: white;
+}
+
+.modal-content button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  background: var(--gold);
+  color: black;
+  font-weight: bold;
+}
+
+.cancelar-btn {
+  width: 100%;
+  margin-top: 10px;
+  padding: 14px;
+  border-radius: 10px;
+  background: #272727;
+  color: white;
+}

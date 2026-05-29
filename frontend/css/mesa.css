@@ -1,0 +1,99 @@
+.mesa-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #141414;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.back-btn {
+  background: var(--gold);
+  color: black;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.total-box {
+  background: var(--gold);
+  color: black;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.categoria {
+  padding: 20px;
+}
+
+.categoria h2 {
+  margin-bottom: 20px;
+  color: var(--gold);
+}
+
+.item {
+  background: #1b1b1b;
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.controle {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.controle button {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: var(--gold);
+  font-weight: bold;
+}
+
+footer {
+  position: sticky;
+  bottom: 0;
+  background: #141414;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+footer button {
+  flex: 1;
+  padding: 14px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.salvar {
+  background: var(--green);
+  color: white;
+}
+
+.mesa-card {
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.mesa-card:active {
+  transform: scale(0.96);
+}
+
+.mesa-card:hover {
+  transform: translateY(-4px);
+}

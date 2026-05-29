@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gauçhão</title>
+
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+</head>
+
+<body>
+
+  <div class="layout">
+
+    <aside class="sidebar">
+      <img src="assets/logo.png" alt="Logo">
+
+      <nav>
+        <a href="dashboard.html">
+  <i class="fa-solid fa-table-cells-large"></i>
+  Dashboard
+</a>
+
+<a href="mesa.html">
+  <i class="fa-solid fa-chair"></i>
+  Mesas
+</a>
+
+<a href="estoque.html">
+  <i class="fa-solid fa-box"></i>
+  Estoque
+</a>
+
+<a href="financeiro.html" id="financeiro-btn">
+  <i class="fa-solid fa-dollar-sign"></i>
+  Financeiro
+</a>
+
+<a href="admin.html" id="admin-btn">
+  <i class="fa-solid fa-shield-halved"></i>
+  Administrador
+</a>
+
+
+      </nav>
+    </aside>
+
+    <main class="content">
+
+      <header>
+        <div>
+          <h1>Painel de Mesas</h1>
+          <p>Controle completo do restaurante</p>
+        </div>
+
+        <div class="header-buttons">
+
+  <button class="add-btn">
+    + Nova Mesa
+  </button>
+
+  <button class="logout-btn" onclick="logout()">
+
+  <i class="fa-solid fa-right-from-bracket"></i>
+
+  Sair
+
+</button>
+  
+
+</div>
+      </header>
+
+      <section class="stats">
+
+        <div class="card stat-card">
+          <h3>Mesas Ocupadas</h3>
+          <span>6</span>
+        </div>
+
+        <div class="card stat-card">
+          <h3>Mesas Livres</h3>
+          <span>4</span>
+        </div>
+
+        <div class="card stat-card" id="total-hoje-card">
+  <h3>Total Hoje</h3>
+          <span>R$ 1.250</span>
+        </div>
+
+        <div class="card stat-card">
+          <h3>Pedidos</h3>
+          <span>28</span>
+        </div>
+
+      </section>
+
+      <section class="mesas-header">
+        <h2>Todas as Mesas</h2>
+      </section>
+
+    
+
+<section class="mesas-grid">
+
+  <div class="mesa-card livre">
+
+    <img
+      src="assets/mesa.png"
+      class="mesa-img"
+    >
+
+    <div class="mesa-numero">
+      01
+    </div>
+
+    <div class="mesa-status livre-status">
+      LIVRE
+    </div>
+
+  </div>
+
+  <div class="mesa-card ocupada">
+
+    <img
+      src="assets/mesa.png"
+      class="mesa-img"
+    >
+
+    <div class="mesa-numero ocupado-numero">
+      02
+    </div>
+
+    <div class="mesa-status ocupado-status">
+      OCUPADA
+    </div>
+
+  </div>
+
+  <div class="mesa-card livre">
+
+    <img
+      src="assets/mesa.png"
+      class="mesa-img"
+    >
+
+    <div class="mesa-numero">
+      03
+    </div>
+
+    <div class="mesa-status livre-status">
+      LIVRE
+    </div>
+
+  </div>
+
+  <div class="mesa-card ocupada">
+
+    <img
+      src="assets/mesa.png"
+      class="mesa-img"
+    >
+
+    <div class="mesa-numero ocupado-numero">
+      04
+    </div>
+
+    <div class="mesa-status ocupado-status">
+      OCUPADA
+    </div>
+
+  </div>
+
+</section>
+
+      
+
+  
+
+</div>
+
+          <p>Nenhum pedido ativo</p>
+
+          <button>Abrir Mesa</button>
+        </div>
+
+        
+            <script src="js/permissoes.js"></script>
+            <script src="js/dashboard.js"></script>
+            
+        </body>
+</html>
