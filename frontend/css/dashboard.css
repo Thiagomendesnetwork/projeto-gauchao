@@ -138,7 +138,7 @@ header {
 
 header h1 {
 
-  font-size: 52px;
+  font-size: 47px;
 
   margin-bottom: 8px;
 }
@@ -462,12 +462,13 @@ header p {
 
     justify-content: space-between;
 
-    margin-bottom: 20px;
+    margin-bottom: -28px;
   }
 
   .mobile-top img {
 
     width: 280px;
+    margin-left: 10px;
   }
 
   .mobile-logout {
