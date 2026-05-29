@@ -441,15 +441,28 @@ header p {
 
     width: 100%;
 
+    padding: 15px;
+
     border-right: none;
 
     border-bottom:
       1px solid rgba(255,255,255,0.05);
   }
 
+  .sidebar img {
+
+    width: 140px;
+
+    margin: auto;
+
+    margin-bottom: 20px;
+
+    display: block;
+  }
+
   .sidebar nav {
 
-    flex-direction: row;
+    display: flex;
 
     overflow-x: auto;
 
@@ -460,9 +473,18 @@ header p {
 
   .sidebar nav a {
 
-    min-width: 180px;
+    min-width: 160px;
 
     justify-content: center;
+
+    font-size: 14px;
+
+    padding: 14px;
+  }
+
+  .content {
+
+    padding: 15px;
   }
 
   header {
@@ -474,11 +496,18 @@ header p {
     gap: 20px;
   }
 
+  h1 {
+
+    font-size: 32px;
+  }
+
   .header-buttons {
 
     width: 100%;
 
     display: flex;
+
+    gap: 10px;
   }
 
   .header-buttons button {
@@ -486,14 +515,88 @@ header p {
     flex: 1;
   }
 
+  .stats {
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px;
+  }
+
+  .stat-card {
+
+    padding: 20px;
+  }
+
   .mesas-grid {
 
     grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+  .mesa-card {
+
+    min-height: auto;
+
+    padding: 20px;
   }
 
   .mesa-img {
 
-    width: 240px;
+    width: 220px;
   }
 
+  .mesa-numero {
+
+    width: 70px;
+    height: 70px;
+
+    font-size: 32px;
+
+    top: -45px;
+  }
+
+  .mesa-status {
+
+    margin-top: -25px;
+  }
+
+}
+
+.mesa-card button {
+
+  margin-top: 18px;
+
+  width: 100%;
+
+  padding: 14px;
+
+  border: none;
+
+  border-radius: 14px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #d4a017,
+      #facc15
+    );
+
+  color: black;
+
+  font-weight: bold;
+
+  font-size: 15px;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.mesa-card button:hover {
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 0 18px rgba(212,160,23,0.35);
 }
